@@ -941,7 +941,7 @@
 
     <properties>
         <!-- Carbon kernel version-->
-        <carbon.kernel.version>4.4.3</carbon.kernel.version>
+        <carbon.kernel.version>4.4.14</carbon.kernel.version>
         <carbon.kernel.imp.pkg.version>[4.4.0, 5.0.0)</carbon.kernel.imp.pkg.version>
         <carbon.kernel.registry.imp.pkg.version>[1.0.1, 2.0.0)</carbon.kernel.registry.imp.pkg.version>
 
@@ -981,20 +981,20 @@
         <!-- Stratos Version -->
         <stratos.version>2.2.0</stratos.version>
 
-        <version.tomcat>7.0.59</version.tomcat>
+        <version.tomcat>7.0.75</version.tomcat>
         <orbit.version.tomcat.servlet.api>${version.tomcat}.wso2v1</orbit.version.tomcat.servlet.api>
 
         <!-- Axiom Version -->
-        <axiom.wso2.version>1.2.11.wso2v6</axiom.wso2.version>
-        <axiom.version>1.2.11-wso2v6</axiom.version>
+        <axiom.wso2.version>1.2.11.wso2v11</axiom.wso2.version>
+        <axiom.version>1.2.11-wso2v11</axiom.version>
         <axiom.osgi.version.range>[1.2.11, 1.3.0)</axiom.osgi.version.range>
-        <orbit.version.axiom>1.2.11.wso2v6</orbit.version.axiom>
+        <orbit.version.axiom>1.2.11.wso2v11</orbit.version.axiom>
 
         <!-- Axis2 Version -->
-        <axis2.wso2.version>1.6.1-wso2v16</axis2.wso2.version>
-        <axis2.version>1.6.1-wso2v16</axis2.version>
-        <axis2.osgi.version.range>[1.6.1.wso2v12, 1.7.0)</axis2.osgi.version.range>
-        <orbit.version.axis2>1.6.1.wso2v16</orbit.version.axis2>
+        <axis2.wso2.version>1.6.1-wso2v20</axis2.wso2.version>
+        <axis2.version>1.6.1-wso2v20</axis2.version>
+        <axis2.osgi.version.range>[1.6.1.wso2v20, 1.7.0)</axis2.osgi.version.range>
+        <orbit.version.axis2>1.6.1.wso2v20</orbit.version.axis2>
         <axis2.wso2.version.aar.plugin>1.6.2</axis2.wso2.version.aar.plugin>
         <neethi.osgi.version>2.0.4.wso2v5</neethi.osgi.version>
         <neethi.osgi.version.range>[2.0.4.wso2v4, 3.1.0)</neethi.osgi.version.range>
@@ -1084,6 +1084,18 @@
              by default) and nothing else. We had troubles with other repositories in
              the past. Therefore configuring additional repositories here should be
              considered very carefully. -->
+
+        <repository>
+            <id>wso2.releases.staging</id>
+            <name>WSO2 Releases Repository Staging</name>
+            <url>https://maven.wso2.org/nexus/content/repositories/orgwso2carbon-1128</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+
         <repository>
             <id>wso2-nexus</id>
             <name>WSO2 internal Repository</name>
